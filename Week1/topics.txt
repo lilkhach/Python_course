@@ -1,0 +1,5 @@
+What is the programing language?
+What is Python?
+Structure and aim of the course.
+Creating working environment.
+Setting up Python and VS Code.
