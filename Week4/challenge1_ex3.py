@@ -5,12 +5,9 @@
 
 x = int(5) 
 
-x = x * 60
+print(x * 60)
 
-print(x)
 
 x = int(2) 
 
-x = x * 60
-
-print(x)
+print(x * 60)
