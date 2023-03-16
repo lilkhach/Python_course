@@ -7,18 +7,14 @@
 x = int(1) 
 y = int(3)
 
-x = x * 3600
 
-y = y * 60
+print((x * 3600) + (y * 60))
 
-print(x + y)
+
 
 
 x = int(2) 
 y = int(0)
 
-x = x * 3600
 
-y = y * 60
-
-print(x + y)
+print((x * 3600) + (y * 60))
