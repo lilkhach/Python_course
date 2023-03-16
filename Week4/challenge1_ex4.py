@@ -7,20 +7,16 @@
 
 x = int(65) 
 
-x = x * 365
+print(x * 365)
 
-print(x)
 
 
 x = int(0) 
 
-x = x * 365
+print(x * 365)
 
-print(x)
 
 
 x = int(20) 
 
-x = x * 365
-
-print(x)
+print(x * 365)
