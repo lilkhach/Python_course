@@ -20,3 +20,21 @@ print(x * 365)
 x = int(20) 
 
 print(x * 365)
+
+
+
+print(x * 365)
+
+
+x = int(0) 
+
+
+
+print(x * 365)
+
+
+x = int(20) 
+
+
+
+print(x * 365)
