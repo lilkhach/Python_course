@@ -9,6 +9,7 @@ x = 45
 y = x // 10 + x %10
 print(y)
 
+
 x = int(45)
 
 y = x % 10

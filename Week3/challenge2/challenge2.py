@@ -12,15 +12,21 @@ Examples
 "Mubashir" ➞ "Hello, my Love!"""
 
 
+# name = input ("Enter the name, please >")
 
-name = input ("Enter the name, please >")
+# greeting = ("Hello" + str(name)) + (name == "Mubashir") * "Hello, my Love!"
 
-greeting = ("Hello" + str(name)) + (name == "Mubashir") * "Hello, my Love!"
-
-print(greeting)
-
+# print(greeting)
 
 
+# name = input("Enter the name, please >")
+
+# y = "Hello, " + name + "!"
+# x = "Hello, my Love!"
+
+# print(x * (name == "Mubashir") + y * (name != "Mubashir"))
+
+# name = (liza+koma*x) + (koma)
 
 
 """2. Create a function that takes two arguments. 
@@ -37,7 +43,7 @@ a,b = 1, 9 ➞ True """
 # a = 9
 # b = 10
 
-# print((a and b == 10) or (a + b == 10)) 
+# print((a and b == 10) or (a + b == 10))
 
 
 """3. Create a function that returns True if an integer is evenly divisible by 5, and False otherwise.
@@ -52,8 +58,6 @@ Examples
 # x = 5
 
 # print(x % 5 == 0)
-
-
 
 
 """4. Extra Knowledge 
@@ -71,8 +75,7 @@ Examples
 # str1 = "ABC"
 # str2 = "CD"
 
-# print(len(str1) == len(str2)) 
-
+# print(len(str1) == len(str2))
 
 
 """5. Given a string, return True if its length is even or False if the length is odd."""
@@ -99,3 +102,9 @@ Examples
 # txt = 1990
 # n = 3
 # print((txt * n) or (txt != True, str * "Not A String!"))
+
+text, repeat = "Matt", 3.
+# tramabanakan = type(text) == str
+# text * repeat + "Not A String !!"
+print(text * repeat * (type(text) == str) + "Not A String !!" * (type(text) != str))
+# print(((text * repeat * tramabanakan)) + ("Not A String!!" * (not tramabanakan)))
