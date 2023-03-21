@@ -104,7 +104,8 @@ Examples
 # print((txt * n) or (txt != True, str * "Not A String!"))
 
 text, repeat = "Matt", 3.
-# tramabanakan = type(text) == str
-# text * repeat + "Not A String !!"
+tramabanakan = type(text) == str
+text * repeat + "Not A String !!"
+print(()"Not A String !!" * isinstance(text, str) != str + text * repeat * (type(text) == str) + ))
 print(text * repeat * (type(text) == str) + "Not A String !!" * (type(text) != str))
 # print(((text * repeat * tramabanakan)) + ("Not A String!!" * (not tramabanakan)))
