@@ -28,7 +28,7 @@ print(x * 365)
 
 
 
-<<<<<<< HEAD:Week4/challenge1/challenge1_ex4.py
+
 print(x * 365)
 
 
@@ -44,5 +44,4 @@ x = int(20)
 
 
 print(x * 365)
-=======
->>>>>>> 59482f3 (thrkj):Week4/challenge1_ex4.py
+
