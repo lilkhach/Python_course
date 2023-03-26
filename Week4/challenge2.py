@@ -150,15 +150,19 @@ Examples
 "01/15/2019" ➞ "20191501" 
 EXTRA Knowledge"""
 
+#solution 1
 
-date = "12/31/2019"
+# date = "12/31/2019"
 
-fdate = date.replace("/", " ")
-rdate = fdate.split()
-rdate.reverse()
+# fdate = date.replace("/", " ")
+# rdate = fdate.split()
+# rdate.reverse()
 
-print(''.join(rdate))
+# print(''.join(rdate))
 
+
+
+# solution 2
 
 # import datetime
 
