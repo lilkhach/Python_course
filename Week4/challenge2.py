@@ -151,6 +151,15 @@ Examples
 EXTRA Knowledge"""
 
 
+date = "12/31/2019"
+
+fdate = date.replace("/", " ")
+rdate = fdate.split()
+rdate.reverse()
+
+print(''.join(rdate))
+
+
 # import datetime
 
 # d = datetime.datetime.strptime("11/12/2019", "%d/%m/%Y")
