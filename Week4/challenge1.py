@@ -95,11 +95,12 @@ a, e, i, o, u are considered vowels (not y).
 EXTRA Knowledge"""
 
 
-vowels = list('aeiou')
-s = input("insert the text: ").lower()
-num_vow = sum([s.count(i) for i in vowels])
+
+# vowels = list('aeiou')
+# s = input("insert the text: ").lower()
+# num_vow = sum([s.count(i) for i in vowels])
  
-print(num_vow)
+# print(num_vow)
 
 
 
@@ -138,11 +139,14 @@ Examples
 
 "shakespeare", "*" ➞ "sh*k*sp**r*" """
 
-# vowels = "a, e, i, o, u"
 
-# string = "the aardvark"
+vowels = "a, e, i, o, u"
 
-# print(string.replace(vowels, "#"))
+string = "the aardvark"
+
+x = string.replace("a", "#") + string.replace("e", "#")
+
+print(x)
 
 
 
@@ -200,7 +204,7 @@ Examples
 
 
 
-"""Create a function to test if a string is a valid pin or not. 
+"""11. Create a function to test if a string is a valid pin or not. 
 A valid pin has:
 - Exactly 4 or 6 characters,
 - Only numerical characters (0-9),
