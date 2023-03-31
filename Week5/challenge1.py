@@ -30,6 +30,11 @@ Must return a tuple.
 255 is the max value of a single color channel. """
 
 
+# rgb = (165, 170, 221)
+
+# print(255 - rgb[0], 255 - rgb[1], 255 - rgb[2])
+
+
 
 
 """3. Write a function that searches a list of names (unsorted) for the name "Bob" and returns the location in the list. If Bob is not in the list, return -1.
@@ -43,10 +48,16 @@ find_bob(["Jimmy", "Layla", "James"]) ➞ -1
 Notes
 Assume all names start with a capital letter and are lowercase thereafter (i.e. don't worry about finding "BOB" or "bob"). """
 
-names = (["Jimmy", "Layla", "Bob"])
+# names = (["Jimmy", "Layla", "Bob"])
+
+# isBob = "Bob" in names
+
+# boolValue = "Bob" in names and names.index("Bob")
+
+# print((not boolValue and isinstance(boolValue, bool)) * -1 + boolValue)
 
 
-print(names.index("Bob")) #+ ((names.index("Bob") is False) * "-1"))
+# print(names.index("Bob") + ("Bob" is not in names) * "-1")
 
 
 """EXTRA Knowledge
@@ -181,6 +192,7 @@ Dict = {
 
 
 # print(Dict["class"]["student"]["marks"]["history"])
+print(Dict.get("class"))
 
 """10. Rename key of a dictionary
 Write a program to rename a key city to a location in the following dictionary.
