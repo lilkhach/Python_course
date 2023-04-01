@@ -158,14 +158,23 @@ Examples
 
 "  hello world!  " ➞ "world! hello"
 
-"a good   example" ➞ "example good a"
+"a good  example" ➞ "example good a"
 Notes
 A word is defined as a sequence of non-space characters.
 The input string may contain leading or trailing spaces. However, your reversed string should not contain leading or trailing spaces.
 Try to solve this in linear time. """
 
+
+
 # string = "the sky is blue"
 
+# lst = string.split()
+
+# lst.reverse()
+
+# rstring = " ".join(lst)
+
+# print(rstring)
 
 
 
@@ -181,6 +190,18 @@ word_builder(["g", "e", "o"], [1, 0, 2]) ➞ "ego"
 word_builder(["e", "t", "s", "t"], [3, 0, 2, 1]) ➞ "test"
 
 word_builder(["b", "e", "t", "i", "d", "a"], [1, 4, 5, 0, 3, 2]) ➞ "edabit" """
+
+
+# lst1, lst2 = ["g", "e", "o"], [1, 0, 2]
+
+# st1 = "".join(lst1)
+# st2 = ", ".join(str(i) for i in lst2)
+
+
+# print(st1[st2])
+# print(st2)
+
+
 
 
 
@@ -255,12 +276,12 @@ Expected output:
 
 set1 {10, 30} """
 
-set1 = {10, 20, 30}
-set2 = {20, 40, 50}
+# set1 = {10, 20, 30}
+# set2 = {20, 40, 50}
 
-set1.difference_update(set2)
+# set1.difference_update(set2)
 
-print(set1)
+# print(set1)
 
 """EXTRA Knowledge
 13. Given an input string, reverse the string word by word (reversed word also).
@@ -273,3 +294,16 @@ A word is defined as a sequence of non-space characters.
 The input string may contain leading or trailing spaces. However, your reversed string should not contain leading or trailing spaces.
 Try to solve this in linear time.
 """
+
+
+# str1 = "the sky is blue"
+
+
+# str2 = str1[::-1]
+
+# lst = str2.split()
+
+# str3 = " ".join(lst)
+
+
+# print(str3)
