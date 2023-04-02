@@ -192,18 +192,13 @@ word_builder(["e", "t", "s", "t"], [3, 0, 2, 1]) ➞ "test"
 word_builder(["b", "e", "t", "i", "d", "a"], [1, 4, 5, 0, 3, 2]) ➞ "edabit" """
 
 
-# lst1, lst2 = ["g", "e", "o"], [1, 0, 2]
+# lst1, lst2 = ["e", "t", "s", "t"], [3, 0, 2, 1]
 
 # st1 = "".join(lst1)
-# st2 = ", ".join(str(i) for i in lst2)
+# st2 = "".join([st1[i] for i in lst2])
 
 
-# print(st1[st2])
 # print(st2)
-
-
-
-
 
 
 """9. Create a function to test if a string is a valid pin or not.
