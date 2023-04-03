@@ -10,15 +10,15 @@ sum_common([1, 2, 2, 3], [5, 3, 2, 2], [7, 3, 2, 2]) ➞ 7
 
 sum_common([1], [1], [2]) ➞ 0 """
 
-# lst1, lst2, lst3 = [1, 2, 3], [5, 3, 2], [7, 3, 2]
+lst1, lst2, lst3 = [1, 2, 3], [5, 3, 2], [7, 3, 2]
 
-# st1, st2, st3 = set(lst1), set(lst2), set(lst3)
+st1, st2, st3 = set(lst1), set(lst2), set(lst3)
 
-# stw = st1 & st2 & st3
+stw = st1 & st2 & st3
 
-# x = stw.intersection()
+x = stw.intersection()
 
-# print(sum(x))   #anyway, this solution doesn't work for example 2(((
+print(sum(x))   #anyway, this solution doesn't work for example 2(((
 
 
 
@@ -40,13 +40,13 @@ Notes
 Count 0 as an even number. """
 
 
-# num = [1, 2, 3, 4, 5, 6]
+num = [1, 2, 3, 4, 5, 6]
 
-# sum_odd = sum([x for x in num if x % 2 != 0])
-# sum_even = sum([x for x in num if x % 2 == 0])
+sum_odd = sum([x for x in num if x % 2 != 0])
+sum_even = sum([x for x in num if x % 2 == 0])
 
 
-# print([sum_even, sum_odd])
+print([sum_even, sum_odd])
 
 
 """3. Create a function that takes a dictionary of objects like { "name": "John", "notes": [3, 5, 4] } and returns a dictionary of objects 
@@ -60,11 +60,11 @@ top_note({ "name": "Max", "notes": [1, 4, 6] }) ➞ { "name": "Max", "top_note":
 top_note({ "name": "Zygmund", "notes": [1, 2, 3] }) ➞ { "name": "Zygmund", "top_note": 3 } """
 
 
-# x = { "name": "Max", "notes": [1, 4, 6] }
+x = { "name": "Max", "notes": [1, 4, 6] }
 
-# highest_note = sorted(x["notes"], reverse=True)[0]
+highest_note = sorted(x["notes"], reverse=True)[0]
 
-# print({"name": x["name"], "top_note": highest_note})
+print({"name": x["name"], "top_note": highest_note})
 
 
 """EXTRA Knowledge
@@ -110,15 +110,15 @@ profit({
 }) ➞ 44030 """
 
 
-# data = {
-#   "cost_price": 225.89,
-#   "sell_price": 550.00,
-#   "inventory": 100
-# }
+data = {
+  "cost_price": 225.89,
+  "sell_price": 550.00,
+  "inventory": 100
+}
 
-# profit = round((data['sell_price'] - data['cost_price']) * data['inventory'])
+profit = round((data['sell_price'] - data['cost_price']) * data['inventory'])
 
-# print(profit)
+print(profit)
 
 
 
@@ -143,11 +143,11 @@ is_harshad(516) ➞ True
 is_harshad(200) ➞ True """
 
 
-# num = 89
+num = 89
 
-# x = (num // 100) + (num % 100) // 10 + num % 10
+x = (num // 100) + (num % 100) // 10 + num % 10
 
-# print(num % x == 0)
+print(num % x == 0)
 
 
 """EXTRA Knowledge
@@ -166,15 +166,15 @@ Try to solve this in linear time. """
 
 
 
-# string = "the sky is blue"
+string = "the sky is blue"
 
-# lst = string.split()
+lst = string.split()
 
-# lst.reverse()
+lst.reverse()
 
-# rstring = " ".join(lst)
+rstring = " ".join(lst)
 
-# print(rstring)
+print(rstring)
 
 
 
@@ -192,13 +192,13 @@ word_builder(["e", "t", "s", "t"], [3, 0, 2, 1]) ➞ "test"
 word_builder(["b", "e", "t", "i", "d", "a"], [1, 4, 5, 0, 3, 2]) ➞ "edabit" """
 
 
-# lst1, lst2 = ["e", "t", "s", "t"], [3, 0, 2, 1]
+lst1, lst2 = ["e", "t", "s", "t"], [3, 0, 2, 1]
 
-# st1 = "".join(lst1)
-# st2 = "".join([st1[i] for i in lst2])
+st1 = "".join(lst1)
+st2 = "".join([st1[i] for i in lst2])
 
 
-# print(st2)
+print(st2)
 
 
 """9. Create a function to test if a string is a valid pin or not.
@@ -222,9 +222,9 @@ Notes
 Empty strings should return False when tested. """
 
 
-# pin = " 4983"
+pin = " 4983"
 
-# print((len(pin) == 4 or len(pin) == 6) and (pin.isnumeric()) and (not pin.isspace()))
+print((len(pin) == 4 or len(pin) == 6) and (pin.isnumeric()) and (not pin.isspace()))
 
 
 """10. Return a new set of identical items from two sets
@@ -237,11 +237,11 @@ Expected output:
 
 {40, 50, 30} """
 
-# set1 = {10, 20, 30, 40, 50}
-# set2 = {30, 40, 50, 60, 70}
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
 
 
-# print(set1.intersection(set2))
+print(set1.intersection(set2))
 
 
 """11. Write a Python program to return a new set with unique items from both sets by removing duplicates.
@@ -255,10 +255,10 @@ Expected output:
 {70, 40, 10, 50, 20, 60, 30} """
 
 
-# set1 = {10, 20, 30, 40, 50}
-# set2 = {30, 40, 50, 60, 70}
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
 
-# print(set1.union(set2))
+print(set1.union(set2))
 
 
 """12. Given two Python sets, write a Python program to update the first set with items that exist only in the first set and not in the second set.
@@ -271,12 +271,12 @@ Expected output:
 
 set1 {10, 30} """
 
-# set1 = {10, 20, 30}
-# set2 = {20, 40, 50}
+set1 = {10, 20, 30}
+set2 = {20, 40, 50}
 
-# set1.difference_update(set2)
+set1.difference_update(set2)
 
-# print(set1)
+print(set1)
 
 """EXTRA Knowledge
 13. Given an input string, reverse the string word by word (reversed word also).
@@ -291,14 +291,13 @@ Try to solve this in linear time.
 """
 
 
-# str1 = "the sky is blue"
+str1 = "the sky is blue"
+
+str2 = str1[::-1]
+
+lst = str2.split()
+
+str3 = " ".join(lst)
 
 
-# str2 = str1[::-1]
-
-# lst = str2.split()
-
-# str3 = " ".join(lst)
-
-
-# print(str3)
+print(str3)
