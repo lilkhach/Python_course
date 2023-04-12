@@ -12,18 +12,28 @@ sum_common([1], [1], [2]) ➞ 0 """
 
 
 
-lst1, lst2, lst3 = [1, 2, 3], [5, 3, 2], [7, 3, 2]
+# lst1, lst2, lst3 = [1, 2, 3], [5, 3, 2], [7, 3, 2]
 
-st1, st2, st3 = set(lst1), set(lst2), set(lst3)
+# st1, st2, st3 = set(lst1), set(lst2), set(lst3)
 
-stw = st1 & st2 & st3
+# stw = st1 & st2 & st3
 
-x = stw.intersection()
+# x = stw.intersection()
 
-print(sum(x))   #anyway, this solution doesn't work for example 2(((
+# print(sum(x))   #anyway, this solution doesn't work for example 2(((
 
 
 
+lst1, lst2, lst3 = [1, 2, 2, 3], [5, 3, 2, 2], [7, 3, 2, 2]
+
+un_set = set(lst1).intersection(set(lst2)) 
+un_set = un_set.intersection(set(lst3))
+
+sum = 0
+
+for i in un_set:
+    sum += i * min([lst1.count(i), lst2.count(i), lst3.count(i)])
+    print(sum)
 
 
 """EXTRA Knowledge

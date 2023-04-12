@@ -111,7 +111,24 @@ There won't be any float values.
 You won't get strings with both numbers and letters in them.
 Although the task may be easy, try keeping your code as clean and as readable as possible! """
 
+x = [13, "13", "12", "twelve", False]
 
+return_value = []
+
+for i in x:
+    if isinstance(i, str):
+        return_value.append(i.capitalize() + "!")
+    elif isinstance(i, bool):
+        return_value.append(not i)
+    elif isinstance(i, int):
+        if i%2:
+            return_value.append(i)
+        else:
+            return_value.append(i+1)
+    
+    else:
+        print(f"Can not parse {i}")
+print(return_value)
 
 
 """6. Create a function that takes a string s and returns a list of two-paired characters. 
@@ -259,6 +276,10 @@ Input lists have a minimum length of 2."""
 
 lst = [1, 3, 10, 6]
 
+y = sorted(lst)
+z = sorted(x, reverse=True)
+
+
 
 
 if lst[0] < lst[1] < lst[2] < lst[3]:
@@ -272,8 +293,8 @@ else:
 
 
 # or 2nd solution. But two variants have disadvantages.
-
-if lst == sorted(lst):
+if len(lst) <=2 or len(set(x)) != len(lst):
+elif lst == sorted(lst):
     print("increasing")
 
 elif lst == sorted(lst, reverse=True):
