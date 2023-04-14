@@ -371,6 +371,25 @@ All the inputs are only integers.
 The operators are * - + and //.
 Hint: Think about the single space that appears before and after the arithmetic operator."""
 
+inp = "12 + 12"
+
+def work(inp):
+    inp = inp.split()
+    a, b = int(inp[0]), int(inp[2])
+
+    if inp[1] == "+":
+        return a + b
+    elif inp[1] == "-":
+        return a-b
+    elif inp[1] == "*":
+        return a*b
+    elif inp[1] == "//":
+        if b == 0:
+            return -1
+        return a // b
+    else:
+        return "Not known operator"
+
 
 
 
@@ -412,4 +431,15 @@ print(swap(27, 31, 31) == 27)
 
 
 
-    
+def func(a:int, b:int, c:int):
+    match c == b:
+        case True:
+            return a
+        case False:
+            return b
+        
+a, b, c = 1, 2, 2
+print(func(a, b, c))
+
+
+print((c == b) * a + (c == a) * b)
