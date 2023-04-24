@@ -1,10 +1,4 @@
-# my_dict = {"apple": "fruit", "banana": "fruit", "carrot": "vegetable"}
 
-# # Reversed dictionary
-# reversed_dict = {v: k for k, v in my_dict.items()}
-
-# # Printing reversed dictionary
-# print(reversed_dict)
 
 
 x = [1, 2, 4, 5]

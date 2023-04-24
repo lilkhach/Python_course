@@ -227,6 +227,9 @@ def matrix(x, y, z):
 
     return output
 
+#ret_list = [[c for j in range(b)] for i in range(a)]
+# return ret_list
+
 
 print(matrix(3, 2, 3) == [[3, 3], [3, 3], [3, 3]])
 
