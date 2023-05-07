@@ -161,4 +161,81 @@ def loves_me(petals: int):
 
 # print(loves_me(1) == "LOVES ME")
 
-    
+
+"""5. Write a function that takes a list of numbers and returns a list with two elements:
+
+    The first element should be the sum of all even numbers in the list.
+    The second element should be the sum of all odd numbers in the list.
+
+Example
+
+sum_odd_and_even([1, 2, 3, 4, 5, 6]) ➞ [12, 9]
+# 2 + 4 + 6 = 12 and 1 + 3 + 5 = 9
+
+sum_odd_and_even([-1, -2, -3, -4, -5, -6]) ➞ [-12, -9])
+
+sum_odd_and_even([0, 0]) ➞ [0, 0])
+
+Notes
+
+Count 0 as an even number."""
+
+# def sum_odd_and_even(nums: list):
+ 
+#    even_sum = 0
+#    odd_sum = 0
+#    for i in (nums):
+#     if i % 2 == 0:
+#       even_sum += i
+#     else:
+#        odd_sum += i
+#    return [even_sum, odd_sum]
+
+# print(sum_odd_and_even([1, 2, 3, 4, 5, 6]))
+
+
+"""6. Create a function that takes a dictionary of objects like { "name": "John", "notes": [3, 5, 4] } and returns a dictionary of objects like 
+{ "name": "John", "top_note": 5 }.
+Examples
+
+top_note({ "name": "John", "notes": [3, 5, 4] }) ➞ { "name": "John", "top_note": 5 }
+
+top_note({ "name": "Max", "notes": [1, 4, 6] }) ➞ { "name": "Max", "top_note": 6 }
+
+top_note({ "name": "Zygmund", "notes": [1, 2, 3] }) ➞ { "name": "Zygmund", "top_note": 3 }"""
+
+
+# def top_note(obj: dict):
+#    obj["notes"] = max(obj["notes"])
+#    return obj
+
+# print(top_note({ "name": "Zygmund", "notes": [1, 2, 3] }))
+
+
+
+"""7. Create a function that converts a date formatted as MM/DD/YYYY to YYYYDDMM.
+Examples
+
+format_date("11/12/2019") ➞ "20191211"
+
+format_date("12/31/2019") ➞ "20193112"
+
+format_date("01/15/2019") ➞ "20191501"
+
+Notes
+
+Return value should be a string."""
+
+
+# def format_date(date: str):
+#    new_lst = date.split("/")[::-1]
+#    new_format = "".join(new_lst)
+#    return new_format
+   
+
+
+# print(format_date("12/31/2019"))
+
+
+print("John" > "Jhon")
+print("Emma" < "Emm")
