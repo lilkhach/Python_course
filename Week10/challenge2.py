@@ -362,7 +362,9 @@ tallest_skyscraper([
 
 """8. Sales by Match
 
-Given a list of integers representing the color of each sock, determine how many pairs of socks with matching colors there are. For example, there are 7 socks with colors [1, 2, 1, 2, 1, 3, 2]. There is one pair of color 1 and one of color 2. There are three odd socks left, one of each color. The number of pairs is 2.
+Given a list of integers representing the color of each sock, determine how many pairs of socks with matching colors there are. 
+For example, there are 7 socks with colors [1, 2, 1, 2, 1, 3, 2]. There is one pair of color 1 and one of color 2. 
+There are three odd socks left, one of each color. The number of pairs is 2.
 
 Create a function that returns an integer representing the number of matching pairs of socks that are available.
 Examples
@@ -372,6 +374,7 @@ sock_merchant([10, 20, 20, 10, 10, 30, 50, 10, 20]) ➞ 3
 sock_merchant([50, 20, 30, 90, 30, 20, 50, 20, 90]) ➞ 4
 
 sock_merchant([]) ➞ 0"""
+
 
 
 
@@ -391,12 +394,18 @@ Notes
 
     If number of times a letter appears in the list is greater than the number of times the letter appears in the string, the extra letters should be left behind (see example #2).
     If all the letters in the list are used in the string, the function should return an empty list (see example #3)."""
+# def remove_letters(ls, st):
+#     for i in st:
+#         if i in ls:
+#             ls.remove(i)
+#     return ls
 
-
+# print(remove_letters(["b", "b", "l", "l", "g", "n", "o", "a", "w"], "balloon"))
 
 """10. Geometry 3: Perimeter of a Triangle
 
-Write a function that takes the coordinates of three points in the form of a 2d array and returns the perimeter of the triangle. The given points are the vertices of a triangle on a two-dimensional plane.
+Write a function that takes the coordinates of three points in the form of a 2d array and returns the perimeter of the triangle. 
+The given points are the vertices of a triangle on a two-dimensional plane.
 Examples
 
 perimeter([[15, 7], [5, 22], [11, 1]]) ➞ 47.08
@@ -412,11 +421,12 @@ Notes
     Output should have 2 decimal places
     This challenge is easier than it looks."""
 
-
+distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 
 """11. Majority Vote
 
-Create a function that returns the majority vote in a list. A majority vote is an element that occurs > N/2 times in a list (where N is the length of the list).
+Create a function that returns the majority vote in a list. 
+A majority vote is an element that occurs > N/2 times in a list (where N is the length of the list).
 Examples
 
 majority_vote(["A", "A", "B"]) ➞ "A"
@@ -499,7 +509,8 @@ If no arguments are given, return [0, 0, 0, 0, 0, 0]"""
 
 """15. How Many Unique Styles?
 
-There are many different styles of music and many albums exhibit multiple styles. Create a function that takes a list of musical styles from albums and returns how many styles are unique.
+There are many different styles of music and many albums exhibit multiple styles. 
+Create a function that takes a list of musical styles from albums and returns how many styles are unique.
 Examples
 
 unique_styles([
