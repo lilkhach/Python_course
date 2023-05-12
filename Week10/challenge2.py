@@ -462,6 +462,15 @@ Notes
     All tests will be valid."""
 
 
+# def pluralize(words: list):
+#     plural = set()
+#     for i in words:
+#         if words.count(i) > 1:
+#             plural.add(i + "s")
+#         else:
+#             plural.add(i)
+#     return plural
+
 
 
 """13. Secret Function 4.0
@@ -479,6 +488,15 @@ Notes
 
 Input is a string."""
 
+
+
+# def secret(inp: str):
+
+
+#   inpl = inp.split(".")
+#   inps = " ".join(inpl[1:])
+
+#   return f"<{inpl[0]} class='{inps}'></p>"
 
 
 
