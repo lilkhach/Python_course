@@ -356,6 +356,34 @@ tallest_skyscraper([
   [1, 1, 1, 0],
   [1, 1, 1, 1]
 ]) ➞ 2"""
+def tallest_skyscraper(skyline:list):
+  height = [0] * len(skyline[0])
+  for i in range(len(skyline)):
+      for j in range(len(skyline[i])):
+        height[j] += skyline[i][j]
+  return(max(height))
+      
+print(tallest_skyscraper([
+  [0, 0, 0, 0],
+  [0, 1, 0, 0],
+  [0, 1, 1, 0],
+  [1, 1, 1, 1]
+]) == 3)
+
+print(tallest_skyscraper([
+  [0, 1, 0, 0],
+  [0, 1, 0, 0],
+  [0, 1, 1, 0],
+  [1, 1, 1, 1]
+]) == 4)
+
+print(tallest_skyscraper([
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [1, 1, 1, 0],
+  [1, 1, 1, 1]
+]) == 2)
+  
 
 
 
@@ -421,7 +449,7 @@ Notes
     Output should have 2 decimal places
     This challenge is easier than it looks."""
 
-distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+# distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 
 """11. Majority Vote
 
