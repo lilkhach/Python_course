@@ -356,33 +356,36 @@ tallest_skyscraper([
   [1, 1, 1, 0],
   [1, 1, 1, 1]
 ]) ➞ 2"""
-def tallest_skyscraper(skyline:list):
-  height = [0] * len(skyline[0])
-  for i in range(len(skyline)):
-      for j in range(len(skyline[i])):
-        height[j] += skyline[i][j]
-  return(max(height))
-      
-print(tallest_skyscraper([
-  [0, 0, 0, 0],
-  [0, 1, 0, 0],
-  [0, 1, 1, 0],
-  [1, 1, 1, 1]
-]) == 3)
 
-print(tallest_skyscraper([
-  [0, 1, 0, 0],
-  [0, 1, 0, 0],
-  [0, 1, 1, 0],
-  [1, 1, 1, 1]
-]) == 4)
 
-print(tallest_skyscraper([
-  [0, 0, 0, 0],
-  [0, 0, 0, 0],
-  [1, 1, 1, 0],
-  [1, 1, 1, 1]
-]) == 2)
+# def tallest_skyscraper(skyline:list):
+#   height = [0] * len(skyline[0])
+#   for i in range(len(skyline)):
+#       for j in range(len(skyline[i])):
+#         height[j] += skyline[i][j]
+#   return(max(height))
+
+
+# print(tallest_skyscraper([
+#   [0, 0, 0, 0],
+#   [0, 1, 0, 0],
+#   [0, 1, 1, 0],
+#   [1, 1, 1, 1]
+# ]) == 3)
+
+# print(tallest_skyscraper([
+#   [0, 1, 0, 0],
+#   [0, 1, 0, 0],
+#   [0, 1, 1, 0],
+#   [1, 1, 1, 1]
+# ]) == 4)
+
+# print(tallest_skyscraper([
+#   [0, 0, 0, 0],
+#   [0, 0, 0, 0],
+#   [1, 1, 1, 0],
+#   [1, 1, 1, 1]
+# ]) == 2)
   
 
 
@@ -403,7 +406,21 @@ sock_merchant([50, 20, 30, 90, 30, 20, 50, 20, 90]) ➞ 4
 
 sock_merchant([]) ➞ 0"""
 
+# def sock_merchant(socks):
+#   pairs = 0
+#   while socks:
+#     i = socks.pop()
+#     if i in socks:
+#         pairs += 1
+#         socks.remove(i)
+#   return pairs
 
+
+# print(sock_merchant([10, 20, 20, 10, 10, 30, 50, 10, 20]) == 3)
+
+# print(sock_merchant([50, 20, 30, 90, 30, 20, 50, 20, 90]) == 4)
+
+# print(sock_merchant([])== 0)
 
 
 
@@ -469,8 +486,21 @@ Notes
     If there is no majority element, return None.
     If the list is empty, return None."""
 
+# def majority_vote(votes):
 
+#   for i in votes:
+#     if votes.count(i) > (len(votes) // 2):
+#         return i
+#         break
+#   else:
+#     return None
+        
 
+# print(majority_vote(["A", "A", "B"]) == "A")
+
+# print(majority_vote(["A", "A", "A", "B", "C", "A"]) == "A")
+
+# print(majority_vote(["A", "B", "B", "A", "C", "C"]) == None)
 
 """12. Pluralize!
 
