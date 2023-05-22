@@ -183,6 +183,19 @@ Notes
     Sort the list in ASCENDING order.
     All objects will be valid."""
 
+
+class Person:
+    def __init__(self, firstname: str, lastname: str, age: int):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.age = age
+
+    def people_sort(self, people, keyword):
+        if keyword == "firstname":
+            return sorted(people)
+        elif keyword 
+
+
 # x = ("Michael", "Alice", "Zoey")
 
 # print(sorted(x))
