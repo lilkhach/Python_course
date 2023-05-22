@@ -183,14 +183,17 @@ Notes
     Sort the list in ASCENDING order.
     All objects will be valid."""
 
+# x = ("Michael", "Alice", "Zoey")
 
+# print(sorted(x))
 
 
 """6. Wait... Who Am I?
 
 Hello there, I... seem to not remember who I am, my memories is all... cloudy, although maybe if I could piece it together...
 
-Oh! Maybe you could help me make a class that helps me remember things. Maybe a method called add that would add to my memory if I would recall things and a remember method that would let me recall a specific memory.
+Oh! Maybe you could help me make a class that helps me remember things. 
+Maybe a method called add that would add to my memory if I would recall things and a remember method that would let me recall a specific memory.
 
 But you have to make add more flexible, I might recall many things in an instant or only one that I would forget again.
 Examples :D
