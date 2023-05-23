@@ -150,6 +150,29 @@ Notes
     The salary is an integer.
     Check the Resources for some helpful tutorials on how to do this."""
 
+# class Employee:
+#     def __init__(self, firstname, lastname, salary) -> None:
+#         self.firstname = firstname
+#         self.lastname = lastname
+#         self.salary = salary
+
+#     @staticmethod
+#     def from_string(data: str):
+#         firstname, lastname, salary = (data.split("-"))
+#         return Employee(firstname, lastname, int(salary))
+    
+
+# emp1 = Employee("Mary", "Sue", 60000)
+# emp2 = Employee.from_string("John-Smith-55000")
+
+# print(emp1.firstname == "Mary")
+
+# print(emp1.salary == 60000)
+
+# print(emp2.firstname == "John")
+
+# print(emp2.salary == 55000)
+
 
 
 
@@ -184,21 +207,36 @@ Notes
     All objects will be valid."""
 
 
-class Person:
-    def __init__(self, firstname: str, lastname: str, age: int):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.age = age
+# class Person:
+#     def __init__(self, firstname: str, lastname: str, age: int):
+#         self.firstname = firstname
+#         self.lastname = lastname
+#         self.age = age
 
-    def people_sort(self, people, keyword):
-        if keyword == "firstname":
-            return sorted(people)
-        elif keyword 
+#     def people_sort(self, people, keyword):
+#         if keyword == "firstname":
+#             return sorted(people, key=lambda p: p.firstname)
+#         if keyword == "lastname":
+#             return sorted(people, key=lambda p: p.lastname)
+#         if keyword == "age":
+#             return sorted(people, key=lambda p: p.age)
+        
+#         raise ValueError("Invalid keyword")
+    
+
+# p1 = Person("Michael", "Smith", 40)
+# p2 = Person("Alice", "Waters", 21)
+# p3 = Person("Zoey", "Jones", 29)
 
 
-# x = ("Michael", "Alice", "Zoey")
+# print(p1.people_sort([p1, p2, p3], "firstname") == [p2, p1, p3])
+# # Alice, Michael, Zoey
 
-# print(sorted(x))
+# print(p2.people_sort([p1, p2, p3], "lastname") == [p3, p1, p2])
+# # Jones, Smith, Waters
+
+# print(p3.people_sort([p1, p2, p3], "age") == [p2, p3, p1])
+
 
 
 """6. Wait... Who Am I?
