@@ -25,26 +25,26 @@ Notes
     Don't worry about needing to handle division by zero errors.
     See the Resources tab for some helpful tutorials on Python classes."""
 
-# class Calculator:
+class Calculator:
 
-#     def add(self, a, b):
-#         return a + b
-#     def subtract(self, a, b):
-#         return a - b
-#     def multiply(self, a, b):
-#         return a * b
-#     def divide(self, a, b):
-#         return a // b
+    def add(self, a, b):
+        return a + b
+    def subtract(self, a, b):
+        return a - b
+    def multiply(self, a, b):
+        return a * b
+    def divide(self, a, b):
+        return a // b
 
-# calculator = Calculator()
+calculator = Calculator()
 
-# print(calculator.add(10, 5) == 15)
+print(calculator.add(10, 5) == 15)
 
-# print(calculator.subtract(10, 5) == 5)
+print(calculator.subtract(10, 5) == 5)
 
-# print(calculator.multiply(10, 5) == 50)
+print(calculator.multiply(10, 5) == 50)
 
-# print(calculator.divide(10, 5) == 2)
+print(calculator.divide(10, 5) == 2)
 
 
 
@@ -68,19 +68,19 @@ Notes
     See version #2 of this series."""
 
 
-# class Ones_threes_nines:
-#     def __init__(self, integer):
-#         self.ones = integer // 1
-#         self.threes = integer // 3
-#         self.nines = integer // 9
+class Ones_threes_nines:
+    def __init__(self, integer):
+        self.ones = integer // 1
+        self.threes = integer // 3
+        self.nines = integer // 9
 
 
-# n1 = Ones_threes_nines(5)
-# print(n1.nines == 0)
+n1 = Ones_threes_nines(5)
+print(n1.nines == 0)
 
-# print(n1.ones == 5)
+print(n1.ones == 5)
 
-# print(n1.threes == 1)
+print(n1.threes == 1)
 
 
 
@@ -111,41 +111,41 @@ Notes
 
 name will be passed in as a string and age, height, weight will be integers."""
 
-# class player:
-#     def __init__(self, name: str, age: int, height: int, weight: int):
-#         self.name = name
-#         self.get_age = lambda: f"{name} is age {age}"
-#         self.get_height = lambda: f"{name} is {height}cm"
-#         self.get_weight = lambda: f"{name} weighs {weight}kg"
+class player:
+    def __init__(self, name: str, age: int, height: int, weight: int):
+        self.name = name
+        self.get_age = lambda: f"{name} is age {age}"
+        self.get_height = lambda: f"{name} is {height}cm"
+        self.get_weight = lambda: f"{name} weighs {weight}kg"
 
 
 # or
 
 
-# class player:
-#     def __init__(self, name: str, age: int, height: int, weight: int):
-#         self.name = name
-#         self.age = age
-#         self.height = height
-#         self.weight = weight
+class player:
+    def __init__(self, name: str, age: int, height: int, weight: int):
+        self.name = name
+        self.age = age
+        self.height = height
+        self.weight = weight
     
-#     def get_age(self):
-#         return f"{self.name} is age {self.age}"
+    def get_age(self):
+        return f"{self.name} is age {self.age}"
     
-#     def get_height(self):
-#         return f"{self.name} is {self.height}cm"
+    def get_height(self):
+        return f"{self.name} is {self.height}cm"
     
-#     def get_weight(self):
-#         return f"{self.name} weighs {self.weight}kg"
+    def get_weight(self):
+        return f"{self.name} weighs {self.weight}kg"
 
 
 
 
-# p1 = player("David Jones", 25, 175, 75)
+p1 = player("David Jones", 25, 175, 75)
 
-# print(p1.get_age() == "David Jones is age 25")
-# print(p1.get_height() == "David Jones is 175cm")
-# print(p1.get_weight() == "David Jones weighs 75kg")
+print(p1.get_age() == "David Jones is age 25")
+print(p1.get_height() == "David Jones is 175cm")
+print(p1.get_weight() == "David Jones weighs 75kg")
 
 
 """4. Fullname and Email
@@ -174,23 +174,23 @@ Notes
     See the Resources tab for some helpful tutorials on Python classes!"""
 
 
-# class Employee:
-#     def __init__(self, firstname, lastname):
-#         self.firstname = firstname
-#         self.lastname = lastname
-#         self.fullname = f"{self.firstname} {self.lastname}"
-#         self.email = f"{self.firstname.lower()}.{self.lastname.lower()}@company.com"
+class Employee:
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.fullname = f"{self.firstname} {self.lastname}"
+        self.email = f"{self.firstname.lower()}.{self.lastname.lower()}@company.com"
 
     
-# emp_1 = Employee("John", "Smith")
-# emp_2 = Employee("Mary",  "Sue")
-# emp_3 = Employee("Antony", "Walker")
+emp_1 = Employee("John", "Smith")
+emp_2 = Employee("Mary",  "Sue")
+emp_3 = Employee("Antony", "Walker")
 
-# print(emp_1.fullname == "John Smith")
+print(emp_1.fullname == "John Smith")
 
-# print(emp_2.email == "mary.sue@company.com")
+print(emp_2.email == "mary.sue@company.com")
 
-# print(emp_3.firstname == "Antony") 
+print(emp_3.firstname == "Antony") 
 
 
 
@@ -222,20 +222,20 @@ Notes
 Feel free to check out the resources provided in the Resources tab for some helpful information on Python classes!"""
 
 
-# class User:
-#     user_count = 0
-#     def __init__(self, username):
-#         self.username = username
-#         User.user_count += 1
+class User:
+    user_count = 0
+    def __init__(self, username):
+        self.username = username
+        User.user_count += 1
 
 
     
-# u1 = User("johnsmith10")
-# print(User.user_count)
-# u2 = User("marysue1989")
-# print(User.user_count)
-# u3 = User("milan_rodrick")
-# print(User.user_count)
+u1 = User("johnsmith10")
+print(User.user_count)
+u2 = User("marysue1989")
+print(User.user_count)
+u3 = User("milan_rodrick")
+print(User.user_count)
 
 
 
@@ -264,20 +264,20 @@ Notes
 
     Make sure only the first letter of each name is capitalised."""
 
-# class Name:
-#     def __init__(self, firstname, lastname):
-#         self.fname = firstname.capitalize()
-#         self.lname = lastname.capitalize()
-#         self.fullname = f"{firstname.capitalize()} {lastname.capitalize()}"
-#         self.initials = f"{firstname[0].capitalize()}.{lastname[0].capitalize()}"
+class Name:
+    def __init__(self, firstname, lastname):
+        self.fname = firstname.capitalize()
+        self.lname = lastname.capitalize()
+        self.fullname = f"{firstname.capitalize()} {lastname.capitalize()}"
+        self.initials = f"{firstname[0].capitalize()}.{lastname[0].capitalize()}"
 
 
-# a1 = Name("john", "SMITH")
+a1 = Name("john", "SMITH")
 
-# print(a1.fname == "John")
-# print(a1.lname == "Smith")
-# print(a1.fullname == "John Smith")
-# print(a1.initials == "J.S")
+print(a1.fname == "John")
+print(a1.lname == "Smith")
+print(a1.fullname == "John Smith")
+print(a1.initials == "J.S")
 
 
 """7. Counting Instances Created from a Class
@@ -301,17 +301,17 @@ c2 = Composer("Wolfgang Amadeus Mozart", 1756, "Austria")
 c3 = Composer("Johannes Brahms", 1833, "Germany")
 Composer.count ➞ 3"""
 
-# class Composer:
-#     count = 0
-#     def __init__(self, name, dob, country):
-#         Composer.count += 1
+class Composer:
+    count = 0
+    def __init__(self, name, dob, country):
+        Composer.count += 1
 
-# print(Composer.count)
-# c1 = Composer("Ludvig van Beethoven", 1770, "Germany")
-# print(Composer.count)
-# c2 = Composer("Wolfgang Amadeus Mozart", 1756, "Austria")
-# c3 = Composer("Johannes Brahms", 1833, "Germany")
-# print(Composer.count)
+print(Composer.count)
+c1 = Composer("Ludvig van Beethoven", 1770, "Germany")
+print(Composer.count)
+c2 = Composer("Wolfgang Amadeus Mozart", 1756, "Austria")
+c3 = Composer("Johannes Brahms", 1833, "Germany")
+print(Composer.count)
 
 
 """8. Book Shelf
@@ -350,23 +350,23 @@ Notes
 
     Remember, after you've finished writing the class and its methods, you must instantiate it through the creation of new objects."""
 
-# class Book:
-#     def __init__(self, title, author):
-#         self.title = title
-#         self.author = author
-#     def get_title(self):
-#         return f"Title: {self.title}"
-#     def get_author(self):
-#         return f"Author: {self.author}"
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+    def get_title(self):
+        return f"Title: {self.title}"
+    def get_author(self):
+        return f"Author: {self.author}"
     
-# PP = Book("Pride and Prejudice", "Jane Austen")
-# H = Book("Hamlet", "William Shakespeare")
-# WP = Book("War and Peace", "Leo Tolstoy")
+PP = Book("Pride and Prejudice", "Jane Austen")
+H = Book("Hamlet", "William Shakespeare")
+WP = Book("War and Peace", "Leo Tolstoy")
 
-# print(PP.title)
-# print(PP.author)
-# print(PP.get_title())
-# print(PP.get_author())
+print(PP.title)
+print(PP.author)
+print(PP.get_title())
+print(PP.get_author())
 
 
 """9. Food for Everyone!
@@ -400,25 +400,25 @@ Notes
     A person can have an empty list for foods they hate and/or love.
     Check the Resources for some helpful tutorials on Python classes."""
 
-# class Person:
-#     def __init__(self, name, likes, hates):
-#         self.name = name
-#         self.likes = likes
-#         self.hates = hates
+class Person:
+    def __init__(self, name, likes, hates):
+        self.name = name
+        self.likes = likes
+        self.hates = hates
     
-#     def taste(self, food_name):
-#         if food_name in self.likes:
-#             return f"{self.name} eats the {food_name} and loves it!"
-#         elif food_name in self.hates:
-#             return f"{self.name} eats the {food_name} and hates it!"
-#         else:
-#             return f"{self.name} eats the {food_name}!"
+    def taste(self, food_name):
+        if food_name in self.likes:
+            return f"{self.name} eats the {food_name} and loves it!"
+        elif food_name in self.hates:
+            return f"{self.name} eats the {food_name} and hates it!"
+        else:
+            return f"{self.name} eats the {food_name}!"
 
-# p1 = Person("Sam", ["ice cream"], ["carrots"])
+p1 = Person("Sam", ["ice cream"], ["carrots"])
 
-# print(p1.taste("ice cream"))
-# print(p1.taste("cheese"))
-# print(p1.taste("carrots"))
+print(p1.taste("ice cream"))
+print(p1.taste("cheese"))
+print(p1.taste("carrots"))
 
 
 
