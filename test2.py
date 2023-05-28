@@ -1,19 +1,12 @@
-print("Fall")
-x = 3
-y = 4
-t = (x*x)+(y*y)
-z = t**(1/2)
 
-print(z == 5)
+# how to create lists in list
 
-x = 4.5
-y = 7.8
-z = (x*x + y*y) **(1/2)
-print (z)
-
-x = 7
-y = 8
-z = (x**2+ y**2) **(1/2)
-print (z)
+result = []
+for i in range(1, 11):
+    x = []
+    for j in range(1, 11):
+        x.append(i*j)
+    result.append(x)
+print(result)
 
 
